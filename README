@@ -10,7 +10,7 @@ sudo apt install git bison flex libssl-dev
 
 2. clone this source code:
 
-git clone https://github.com/raspberrypi/linux ~/linux
+git clone https://github.com/sergiPopescou/linux ~/linux
 
 
 3. instal QEMU for ARM
