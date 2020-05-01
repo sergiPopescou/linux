@@ -16,7 +16,7 @@ HOW TO RUN QEMU
 ```
 
 
-## 3. instal QEMU for ARM
+## 3. install QEMU for ARM
 ```
     sudo apt install qemu-system-arm
 ```
