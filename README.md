@@ -4,7 +4,7 @@ HOW TO RUN QEMU
 ## 1. get compiler other tools and update
 
 ```
-    git clone https://github.com/raspberrypi/tools ~/tools
+    git clone --depth 1 https://github.com/raspberrypi/tools ~/tools
     sudo apt update
     sudo apt install git bison flex libssl-dev
 ```
@@ -12,7 +12,7 @@ HOW TO RUN QEMU
 ## 2. clone this source code:
 
 ```
-    git clone https://github.com/sergiPopescou/linux ~/linux
+    git clone --depth 1 https://github.com/sergiPopescou/linux ~/linux
 ```
 
 
