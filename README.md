@@ -1,7 +1,7 @@
 HOW TO RUN QEMU
 ===============
 
-##1. get compiler other tools and update
+## 1. get compiler other tools and update
 
 ```
     git clone https://github.com/raspberrypi/tools ~/tools
@@ -9,28 +9,26 @@ HOW TO RUN QEMU
     sudo apt install git bison flex libssl-dev
 ```
 
-##2. clone this source code:
+## 2. clone this source code:
 
 ```
     git clone https://github.com/sergiPopescou/linux ~/linux
 ```
 
 
-##3. instal QEMU for ARM
+## 3. instal QEMU for ARM
 ```
     sudo apt install qemu-system-arm
 ```
-###Status after first three steps
-------------------------------
+### Status after first three steps
 
 After this step, you have your tools and linux source code in the following paths:
 ```
     ~/tools/: Raspberry Pi’s compiler tool set
     ~/linux/: Patched Linux kernel source code folder
 ```
-------------------------------
 
-##4. set the environmental variables:
+## 4. set the environmental variables:
 ```
     echo PATH=\$PATH:~/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin >> ~/.bashrc
     echo KERNEL=kernel7 >> ~/.bashrc
@@ -41,7 +39,7 @@ After this step, you have your tools and linux source code in the following path
 The last command will execure bashrc once again to set the variables
 
 
-##5. compile the patched kernel
+## 5. compile the patched kernel
 ```
     cd ~/linux
     make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- versatile_defconfig
@@ -50,24 +48,24 @@ The last command will execure bashrc once again to set the variables
 Just in case variables are set once more
 
 
-##6. download and decompress qemu files
+## 6. download and decompress qemu files
 
-###6.1 python tool for downloading from the google dive needed
+### 6.1 python tool for downloading from the google dive needed
 ```
     sudo apt install python-pip
     pip install gdown
 ```
-###6.2 download file in linux folder
+### 6.2 download file in linux folder
 ```
     cd ~/linux
     gdown https://drive.google.com/uc?id=1UAf0JUE5PW8dbqoNj-uocu8Kj4WnHrga
 ```
-###6.3 decompress it directly in linux root folder (not in sub-folder)
+### 6.3 decompress it directly in linux root folder (not in sub-folder)
 ```
     tar -xf qemu_files.tar.xz
 ```
 
-##7. run QEMU emulator
+## 7. run QEMU emulator
 
 With all the previous steps, we should get the kernel image, the device tree blob file and the disk image in the paths shown below:
 ```
