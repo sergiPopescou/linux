@@ -13,7 +13,7 @@ HOW TO BUILD FOR QEMU:
 ## 2. clone this source code:
 
 ```
-    git clone --depth 1 https://github.com/sergiPopescou/linux ~/linux-src
+    git clone --depth 1 https://github.com/sergiPopescou/linux -b rpi-1.19.y-rt ~/linux-src
 ```
 
 
