@@ -37,11 +37,11 @@ Just in case variables are set once more
 
 With all the previous steps, we should get the kernel image, the device tree blob file and the disk image in the paths shown below:
 ```
-    ~/linux/arch/arm/boot/zImage
-    ~/linux/vmlinux
-    ~/linux/arch/arm/boot/dts/versatile-pb.dtb
-    ~/linux/2020-04-30-raspbian-buster-lite.img
-    ~/linux/run_qemu.sh
+    ~/linux-src/arch/arm/boot/zImage
+    ~/linux-src/vmlinux
+    ~/linux-src/arch/arm/boot/dts/versatile-pb.dtb
+    ~/linux-src/2020-04-30-raspbian-buster-lite.img
+    ~/linux-src/run_qemu.sh
 ```
 
 run `./run_qemu.sh` in `~/linux` folder
